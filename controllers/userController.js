@@ -160,7 +160,7 @@ const sendResetPasswordmail = (req, res, name, email, token) => {
     }
     console.log("****mail body****", mailoption)
     transporter.sendMail(mailoption, function (info, error) {
-        if (!err) {
+        if (!err) {x
             console.log("mail has been sent to", info.response)
         } else {
             console.log("Err", error);
